@@ -1,0 +1,850 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+.nav-buttons{
+    margin-left: 60%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+h2{
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+h3{
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+h4{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+h5{
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+h6{
+    color: #d8d8d8;
+}
+
+button{
+    font-size: 0.8rem;
+    font-weight: 900;
+    outline: none;
+    border: none;
+    background-color: #1d1d1d;
+    color: aliceblue;
+    padding: 13px 30px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+button:hover{
+    background-color: greenyellow;
+}
+
+.navbar{
+    font-size: 16px;
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+    top: 0;
+    left: 0;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+.navbar img {
+    background: url("disso.jpeg") no-repeat;
+        width: 50px;
+        height: 50px;
+        display: block;
+}
+
+.navbar-light .navbar-nav .nav-link{
+    padding: 0 20px;
+    color: black;
+    transition: 0.4s ease;
+}
+
+.navbar-light .navbar-nav .nav-link:hover, 
+.navbar i:hover, 
+.navbar-light .navbar-nav .nav-link.active 
+.navbar i:hover{
+    color: greenyellow;
+
+}
+
+.navbar i {
+    font-size: 1.2rem;
+    padding: 0 0.7px;
+    transition: 0.4s ease;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+@media only screen and (max-width: 990px){
+    .nav-buttons{
+        margin: 10px;
+    }
+
+    .nav-buttons ul{
+        margin: 1rem;
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .nav-buttons ul .fa{
+        margin: 20px 5px 10px 20px;
+    }
+}
+
+#home{
+    background-image: url('../imgs/pexels-nataliya-vaitkevich-8467975.jpg');
+    width: 100%;
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+#home span{
+    color: greenyellow;
+}
+
+#new .one img{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#new .one{
+    position: relative;
+}
+
+#new .one .details{
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: burlywood;
+    font-weight: bold;
+    transition: 0.4s ease;
+    opacity: 0.5;
+    background-color: rgb(1, 1, 1);
+    width: 100%;
+    height: 100%;
+}
+
+#new .one .details:hover{
+    background-color: cornsilk;
+}
+
+#new .one:nth-child(1) .details{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: start;
+}
+
+#new .one:nth-child(2) .details{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#new .one:nth-child(3) .details{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: ends;
+}
+
+/* Product */
+
+.product{
+    cursor: pointer;
+    margin-bottom: 2rem;
+}
+
+.product img{
+    transition: 0.3s all;
+}
+
+.product:hover img{
+    opacity: 0.7;
+}
+
+.product .buy-now-btn{
+    background-color: greenyellow;
+    transform: translateY(50px);
+    opacity: 0;
+    transition: 0.3s all;
+}
+
+.product:hover .buy-now-btn{
+    transform: translate(0px);
+    opacity: 1;
+}
+
+
+.star{
+    padding: 10px 0;
+}
+
+.star i{
+    font-size: 0.9rem;
+    color: goldenrod;
+}
+
+footer{
+    background-color: #222;
+}
+
+footer h5{
+    color: #d8d8d8;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+footer li{
+    padding-bottom: 4px;
+}
+
+footer li a{
+    font-size: 0.8rem;
+    color: #999;
+    text-decoration: none;
+}
+
+footer li a:hover{
+    color: #d8d8d8;
+}
+
+footer .copyright a{
+    color: #000;
+    height: 40px;
+    width: 40px;
+    background-color: #fff;
+    display: inline-block;
+    text-align: center;
+    line-height: 38px;
+    border-radius: 50%;
+    transition: 0.3s ease;
+    margin: 0 5px;
+} 
+
+footer .copyright a:hover{
+    color: #fff;
+    font-size: 0.8rem;
+}
+
+footer p{
+    color: #999;
+    font-size: 0.8rem;
+}
+
+footer img{
+    background: url("disso.jpeg") no-repeat;
+        width: 50px;
+        height: 50px;
+        display: block;
+    
+}
+
+.single-product input{
+    width: 50px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.single-product input:focus{
+    outline: none;
+}
+
+.single-product .buy-now-btn{
+    background-color: greenyellow;
+    opacity: 1;
+    transition: 0.4s all;
+}
+
+.single-product .buy-now-btn:hover{
+    background-color: #222222;
+}
+
+.single-product .sub-now-btn{
+    padding-top: 10px;
+    background-color: greenyellow;
+    opacity: 1;
+    transition: 0.4s all;
+}
+
+.single-product .sub-now-btn:hover{
+    background-color: #222222;
+}
+
+/* Cart */
+
+.cart table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.cart .product-info{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cart th{
+    text-align: left;
+    padding: 5px 10px;
+    color: #fff;
+    background-color: greenyellow;
+}
+
+.cart td{
+    padding: 10px 20px;
+}
+
+.cart td img{
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+
+
+.cart td a{
+    color: greenyellow;
+}
+
+.cart .remove-btn{
+    color: greenyellow;
+    text-decoration: none;
+    font-size: 14px;
+    background-color: white;
+    border: none;
+}
+
+.cart .edit-btn{
+    color: greenyellow;
+    text-decoration: none;
+    font-size: 15px;
+    background-color: white;
+    border: none;
+    float: right;
+}
+
+.cart .product-info p{
+    margin: 3px;
+}
+
+.cart-total{
+    display: flex;
+    justify-content: flex-end;
+    text-align: center;
+}
+
+.cart-total table{
+    width: 100%;
+    max-width: 500px;
+    border-top: 3px solid greenyellow;
+}
+
+.checkout-container{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.checkout-btn{
+    background-color: greenyellow;
+    color: white;
+    border: none;
+}
+
+/* Subscribe Cart */
+
+.subscribe table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.subscribe .product-info{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.subscribe th{
+    text-align: left;
+    padding: 5px 10px;
+    color: #fff;
+    background-color: greenyellow;
+}
+
+.subscribe td{
+    padding: 10px 20px;
+}
+
+.subscribe td img{
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+
+
+.subscribe td a{
+    color: greenyellow;
+}
+
+.subscribe .remove-btn{
+    color: greenyellow;
+    text-decoration: none;
+    font-size: 14px;
+    background-color: white;
+    border: none;
+}
+
+.subscribe .edit-btn{
+    color: greenyellow;
+    text-decoration: none;
+    font-size: 15px;
+    background-color: white;
+    border: none;
+    float: right;
+}
+
+.subscribe .product-info p{
+    margin: 3px;
+}
+
+.subscribe-cart-total{
+    display: flex;
+    justify-content: flex-end;
+    text-align: center;
+}
+
+.subscribe-cart-total table{
+    width: 100%;
+    max-width: 500px;
+    border-top: 3px solid greenyellow;
+}
+
+.subscribe-checkout-container{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.subscribe-checkout-btn{
+    background-color: greenyellow;
+    color: white;
+    border: none;
+}
+
+/* Login */
+
+#login-form{
+    width: 50%;
+    margin: 5px auto;
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid greenyellow;
+}
+
+#login-form input{
+    width: 50%;
+    margin: 5px auto;
+}
+
+#login-form #login-button{
+    background-color: greenyellow;
+    color: #fff;
+    border: none;
+}
+
+#login-form #register-url{
+    color: greenyellow;
+}
+
+/* Register */
+#register-form{
+    width: 50%;
+    margin: 0px auto;
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid greenyellow;
+}
+
+#register-form input{
+    width: 50%;
+    margin: 5px auto;
+}
+
+#register-form #register-button{
+    background-color: greenyellow;
+    color: #fff;
+    border: none;
+}
+
+#register-form #login-url{
+    color: greenyellow;
+}
+
+
+/* Account */
+
+#account-form{
+    width: 50%;
+    margin: 35px auto;
+    text-align: center;
+    padding: 20px;
+}
+
+#account-form input{
+    margin: 5px auto;
+}
+
+#account-form #change-pass-button{
+    color: #fff;
+    background-color: greenyellow;
+    border: none;
+}
+
+.account-info #order-button,#logout-button{
+    color: greenyellow;
+    text-decoration: none;
+}
+
+.account-info #subscribe-button,#logout-button{
+    color: greenyellow;
+    text-decoration: none;
+}
+
+/* Orders */
+
+.orders table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.orders .product-info{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.orders th{
+    padding: 5px 20px;
+    color: #fff;
+    background-color: greenyellow;
+    /* text-align: left; */
+}
+
+/* .orders th::nth-child(2){
+    text-align: right;
+} */
+
+.orders td{
+    padding: 10px 20px
+}
+
+.orders td img{
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+
+.orders .order-details-button{
+    color: #fff;
+    background-color: greenyellow;
+    border: none;
+}
+
+/* Subscriptions */
+
+.subscriptions table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.subscriptions .product-info{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.subscriptions th{
+    padding: 5px 20px;
+    color: #fff;
+    background-color: greenyellow;
+    text-align: left;
+}
+
+.subscriptions th::nth-child(2){
+    text-align: right;
+}
+
+.subscriptions td{
+    padding: 10px 20px
+}
+
+.subscriptions td img{
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+
+.subscriptions .subscribe-details-button{
+    color: #fff;
+    background-color: greenyellow;
+    border: none;
+}
+
+.subscriptions .subscribe-delete-button{
+    color: #fff;
+    background-color: red;
+    border: none;
+}
+
+
+
+
+
+/* Checkout */
+
+#checkout-form .checkout-small-element{
+    display: inline-block;
+    width: 48%;
+    margin: 10px auto;
+}
+
+#checkout-form .checkout-large-element{
+    width: 96%;
+}
+
+#checkout-form .checkout-button-container{
+    margin: 10px;
+    text-align: right;
+    margin-right: 40px;
+}
+
+#checkout-form #checkout-button{
+    color: #fff;
+    background-color: greenyellow;
+    border: none;
+}
+
+/* Subscribe Checkout */
+
+#subscribe-checkout-form .checkout-small-element{
+    display: inline-block;
+    width: 48%;
+    margin: 10px auto;
+}
+
+#subscribe-checkout-form .checkout-large-element{
+    width: 96%;
+}
+
+#subscribe-checkout-form .checkout-button-container{
+    margin: 10px;
+    text-align: right;
+    margin-right: 40px;
+}
+
+#subscribe-checkout-form #checkout-button{
+    color: #fff;
+    background-color: greenyellow;
+    border: none;
+}
+
+/* Contact */
+#contact span{
+    color: greenyellow;
+}
+
+/* Shop */
+
+#shop{
+    width: 70%;
+    display: inline-block;
+}
+
+#search{
+    width: 20%;
+    display: inline-block;
+    float: left;
+}
+
+.cart-quantity{
+    background-color: greenyellow;
+    color: #fff;
+    padding: 2px 5px;
+    border-radius: 50%;
+    margin: -5px;
+    font-size: 1rem;
+}
+
+
+.wrapper{
+    width: 720px;
+    background: #fff;
+    border-radius: 5px;
+    margin: 120px;
+}
+
+.wrapper header{
+    font-size: 22px;
+    font-weight: 600;
+    padding: 20px 30px;
+    border-bottom: 1px solid #bfbfbf;
+}
+.wrapper form{
+    margin: 50px 30px;
+
+}
+
+form .dbl-field{
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    justify-content: space-between;
+}
+
+.dbl-field .field{
+    height: 50px;
+    position: relative;
+    width: calc(100% / 2 - 13px);
+
+}
+
+form .field input,
+form .message textarea{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    padding: 0 18px 0 48px;
+    border: 1px solid #bfbfbf;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form .field input::placeholder,
+form .message textarea::placeholder{
+    color: #bfbfbf;
+}
+
+form .field input:focus,
+form .message textarea:focus{
+    border: 2px solid greenyellow;
+
+}
+
+.wrapper .form i{
+    position: absolute;
+    left: 18px;
+    top: 50px;
+    color: #bfbfbf;
+    font-size: 17px;
+    pointer-events: none;
+    transform: translateY(-50%);
+}
+
+form .field input:focus ~ i,
+form .message textarea:focus ~ i{
+    color: greenyellow;
+}
+
+form .message{
+    position: relative;
+}
+
+form .message i{
+    top: 30px;
+    font-size: 22px;
+}
+
+form .message textarea{
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 120px;
+    max-height: 300px;
+    padding: 15px 20px 0 48px;
+
+}
+
+form .button-area{
+    margin: 25px 0;
+    display: flex;
+    align-items: center;
+}
+
+.button-area button{
+    font-size: 18px;
+    border: none;
+    background: greenyellow;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 13px 25px;
+}
+
+.button-area span{
+    color: greenyellow;
+    margin-left: 30px;
+    display: none;
+
+}
+
+@media(max-width: 600px){
+    .wrapper header{
+        text-align: center;
+    }
+    form .dbl-field{
+        margin-bottom: 0px;
+        flex-direction: column;
+    }
+    .dbl-field .field{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    form .message textarea{
+        resize: none;
+
+    }
+    .button-area button{
+        width: 100;
+    }
+    form .button-area{
+        flex-direction: column;
+    }
+    .button-area span{
+        text-align: center;
+        margin-right: 20px 0;
+    }
+}

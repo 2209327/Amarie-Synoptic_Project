@@ -1,0 +1,91 @@
+<?php include('layouts/header.php'); ?>
+
+<?php 
+
+
+if(!empty($_SESSION['subscribe'])){
+
+  //let user in 
+
+
+
+  //send user to home page
+}else{
+
+  header('location: index.php');
+
+}
+
+
+
+
+
+
+
+
+
+
+?>
+
+
+
+
+
+
+
+
+
+
+
+    <!--Subscribe Checkout-->
+    <section class="my-5 py-5">
+        <div class="container text-center mt-3 pt-5">
+            <h2 class="form-weight-bold">Subscribe Check out</h2>
+            <hr class="mx-auto">
+        </div>
+        <div class="mx-auto container">
+            <form id="subscribe-checkout-form" method="POST" action="server/place_subscription.php">
+            <p class="text-center" style="color: red;">
+                    <?php if(isset($_GET['message'])){ echo $_GET['message']; } ?>
+                    <?php if(isset($_GET['message'])){ ?>
+
+                      <a href="login.php" class="button">Login</a>
+
+                     <?php } ?> 
+
+            </p>
+                <div class="form-group checkout-small-element">
+                    <label>Name</label>
+                    <input type="text" class="form-control" id="checkout-name" name="name" placeholder="Name" required>
+                </div>
+                <div class="form-group checkout-small-element">
+                    <label>Email</label>
+                    <input type="text" class="form-control" id="checkout-email" name="email" placeholder="Email" required>
+                </div>
+                <div class="form-group checkout-small-element">
+                    <label>Phone</label>
+                    <input type="tel" class="form-control" id="checkout-phone" name="phone" placeholder="Phone" required>
+                </div>
+                <div class="form-group checkout-small-element">
+                    <label>City</label>
+                    <input type="text" class="form-control" id="checkout-city" name="city" placeholder="City" required>
+                </div>
+                <div class="form-group checkout-large-element">
+                    <label>Address</label>
+                    <input type="text" class="form-control" id="checkout-address" name="address" placeholder="Address" required>
+                </div>
+                <div class="form-group checkout-large-element">
+                    <label>Frequency</label>
+                    <input type="text" class="form-control" id="checkout-address" name="frequency" placeholder="Frequency" required>
+                </div>
+                <div class="form-group checkout-button-container">
+                    <p>Total amount: £ <?php echo $_SESSION['subscribe_total']; ?></p>
+                    <input type="submit" class="button" id="checkout-button" name="place_subscription"  value="Place Subscription">
+                </div>
+            </form>
+
+        </div>
+    </section>
+  
+
+    <?php  include('layouts/footer.php');   ?>
